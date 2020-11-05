@@ -1,6 +1,6 @@
 // function to generate markdown for README
-
 const generateMarkdown = (response) => {
+  // this is the information that will be displayed in the README along with the user input.
   const markdownTemplate = `# ${response.Title}
 
 ## Description
@@ -45,5 +45,5 @@ You can check out the repository at: https://github.com/${response.Username}
 `;
 return markdownTemplate
 }
-
+// this exports the file so that it can be required in the index.js file.
 module.exports = generateMarkdown;

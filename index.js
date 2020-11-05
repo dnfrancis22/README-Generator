@@ -1,7 +1,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown');
-// array of questions for user
+// inquirer prompts the user with these questions.
 inquirer
 .prompt([
     {
@@ -53,26 +53,13 @@ inquirer
 
 
 ])
+// this is the promise from inquirer.
 .then((response) => {
     console.log(response);
     const generatedMarkdown = generateMarkdown(response);
-
+// function to write README file
     fs.writeFile('newREADME.md', generatedMarkdown, 'UTF8', (err) => {
         if (err) throw err;
         console.log('The file has been Generated!');
       });
 });
-
-
-// function to write README file
-// function writeToFile(fileName, data) {   
-// }
-
-
-// function to initialize program
-// function init() {
-
-// }
-
-// // function call to initialize program
-// init();
