@@ -12,7 +12,7 @@ Clone the project from Github. In VS Code from the terminal run node index.js an
 
 When you run node index.js you are prompted for a title. Enter a title for your project. You will then be prompted for a description, installation, usage, license, contributors, tests, Github username, and email address. once you have entered all of this information A README file will be generated based on your input.
 
-![planner](./assets/planner.jpeg)
+![rmgen](./assets/rmgen.png)
 
 **License**
 
