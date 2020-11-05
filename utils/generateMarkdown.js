@@ -1,8 +1,8 @@
 // function to generate markdown for README
-function generateMarkdown(data) {
-  return `
-  # ${data.title}
-  ## Horiseon-code-refactor
+
+const generateMarkdown = (response) => {
+  const markdownTemplate = `
+# ${response.title}
 
 ## Table Of Contents
 
@@ -29,6 +29,7 @@ function generateMarkdown(data) {
 ## Questions
 
 `;
+return markdownTemplate
 }
 
 module.exports = generateMarkdown;
